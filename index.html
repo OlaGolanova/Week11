@@ -5,15 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="one">
+        <div class="wrap">
+            <div class="wrapper">
+                <div class="card card__img">
+                    <img src="img/Womens_Trail.jpg" alt="женские" class="img"  >
+                </div>
+                <div class="card card__descr">
+                    <p id="card__title">Albirds кроссовки женские</p>
+                    <p>Цвет: бежевый</p>
+                    <p>Размер: 37</p>
+                    <p>Количество: 1</p>
+                </div>
+                <div class="card card__price">
+                    <p class="price"><span class="price_one">5700</span>&#8381;</p> 
+                </div>
+                <div class="card card__img">
+                    <img src="img/Mens_Trail.jpg" alt="мужские"  class="img">
+                </div>
+                <div class="card card__descr">
+                    <p id="card__title"> Albirds кроссовки мужские</p>
+                    <p>Цвет: оранжевый</p>
+                    <p>Размер: 40</p>
+                    <p>Количество: 1</p>
+                </div>
+                <div class="card  card__price"">
+                    <p class="price"> <span class="price_two">4800</span> &#8381;</p>
+                </div>
+                <div class="card card__img">
+                    <img src="img/Mens_Trail_Runn.jpg" alt="мужские_беговые"  class="img">
+                </div>
+                <div class="card card__descr">
+                    <p id="card__title">Albirds кроссовки мужские беговые</p>
+                    <p>Цвет: черный</p>
+                    <p>Размер: 40</p>
+                    <p>Количество: 1</p>
+                </div>
+                <div class="card card__price">
+                    <p class="price"> <span class="price_three">10300</span> &#8381;</p>
+                </div>
+            </div>
+            <div class="total">
+                <button class="total__button" >Использовать купон на 20%</button>
+                <div class="total__price">Итого:<br><span class="span">20800</span> <span> &#8381;</span></div> 
+            </div>
+        </div>
+    </section>
+
 
     <section class="two">
-        <h2> *** Задание под звездочкой</h2>
-        <input type="number" id="number">
-        <input type="text" readonly id="result">
-        <button id="two-btn" onclick="clickMe()">ок</button>
+        <div class="wrap">
+            <h2> *** Задание под звездочкой</h2>
+            <input type="number" id="number">
+            <input type="text" readonly id="result">
+            <button id="two-btn" onclick="clickMe()">ок</button>
+        </div>
     </section>
     <script src="index.js"></script>
 </body>
