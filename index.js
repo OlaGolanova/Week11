@@ -2,6 +2,7 @@ const button = document.querySelector('.total__button');
 const sale20 = 0.8;
 let info = document.querySelector('.total__button').textContent;
 let rub = '&#8381;'
+let prob = '&nbsp;';
 
 
 
@@ -9,22 +10,22 @@ let rub = '&#8381;'
 button.addEventListener('click', function() { 
     let span = document.createElement('span');
     span.className = "price_t";
-    span.innerHTML = ` <del>  ${+document.querySelector('.span').textContent} </del> ${rub}`;
+    span.innerHTML = ` ${prob} <del> ${prob} ${+document.querySelector('.span').textContent} ${rub} </del> `;
     document.querySelector('.total__price').append(span);
 
     let spanOne = document.createElement('span');
     spanOne.className = "price_one";
-    spanOne.innerHTML = ` <del>  ${+document.querySelector('.price_one').textContent} </del> ${rub}`;
+    spanOne.innerHTML = `${prob} <del>  ${+document.querySelector('.price_one').textContent} ${rub}</del>`;
     document.querySelector('.price_last').append(spanOne);
 
     let spanTwo= document.createElement('span');
     spanTwo.className = "price_two";
-    spanTwo.innerHTML = ` <del>  ${+document.querySelector('.price_two').textContent} </del> ${rub}`;
+    spanTwo.innerHTML = `${prob} <del>  ${+document.querySelector('.price_two').textContent} ${rub}</del>`;
     document.querySelector('.price_last_two').append(spanTwo);
 
     let spanThree= document.createElement('span');
     spanThree.className = "price_three";
-    spanThree.innerHTML = ` <del>  ${+document.querySelector('.price_three').textContent} </del> ${rub}`;
+    spanThree.innerHTML = `${prob} <del>  ${+document.querySelector('.price_three').textContent} ${rub}</del>`;
     document.querySelector('.price_last_three').append(spanThree);
 
     document.querySelector('.span').textContent = +document.querySelector('.span').textContent * sale20;

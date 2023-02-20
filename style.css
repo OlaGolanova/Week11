@@ -98,7 +98,9 @@ input {
     height: 35px;
     width: 35px;
 }
-
+del{
+    color:red
+}
 
 
 @media(max-width: 776px) {
@@ -142,6 +144,8 @@ input {
     }
     .total__price  {
         margin-right: 15px;
-
+    }
+    .span {
+        font-size: 18px;
     }
   }
