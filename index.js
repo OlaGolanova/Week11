@@ -1,27 +1,32 @@
 const button = document.querySelector('.total__button');
 const sale20 = 0.8;
-let info = document.querySelector('.total__button').textContent;
+const span = document.createElement('span');
+const spanOne = document.createElement('span');
+const spanTwo= document.createElement('span');
+const spanThree= document.createElement('span');
+const info = document.querySelector('.total__button').textContent;
 let rub = '&#8381;'
 let prob = '&nbsp;';
 
 
+
+
 function getSale20() {
-    let span = document.createElement('span');
     span.className = "price_t";
     span.innerHTML = ` ${prob} <del> ${prob} ${+document.querySelector('.span').textContent} ${rub} </del> `;
     document.querySelector('.total__price').append(span);
 
-    let spanOne = document.createElement('span');
+   
     spanOne.className = "price_one";
     spanOne.innerHTML = `${prob} <del>  ${+document.querySelector('.price_one').textContent} ${rub}</del>`;
     document.querySelector('.price_last').append(spanOne);
 
-    let spanTwo= document.createElement('span');
+    
     spanTwo.className = "price_two";
     spanTwo.innerHTML = `${prob} <del>  ${+document.querySelector('.price_two').textContent} ${rub}</del>`;
     document.querySelector('.price_last_two').append(spanTwo);
 
-    let spanThree= document.createElement('span');
+    
     spanThree.className = "price_three";
     spanThree.innerHTML = `${prob} <del>  ${+document.querySelector('.price_three').textContent} ${rub}</del>`;
     document.querySelector('.price_last_three').append(spanThree);
