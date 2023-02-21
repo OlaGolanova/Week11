@@ -5,9 +5,7 @@ let rub = '&#8381;'
 let prob = '&nbsp;';
 
 
-
-
-button.addEventListener('click', function() { 
+function getSale20() {
     let span = document.createElement('span');
     span.className = "price_t";
     span.innerHTML = ` ${prob} <del> ${prob} ${+document.querySelector('.span').textContent} ${rub} </del> `;
@@ -35,8 +33,9 @@ button.addEventListener('click', function() {
     document.querySelector('.total__button').textContent = 'ВЫГОДНО!'
     button.style.backgroundColor = 'white';
     button.style.color = 'red';
-    
- } , {once : true});
+}
+
+button.addEventListener('click', getSale20 , {once : true});
 
 function clickMe() {
     let num = +document.getElementById('number').value;
